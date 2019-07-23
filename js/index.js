@@ -1,22 +1,4 @@
 
-// SP用トグル
-// $(function() {
-//   $('.gnav_trigger').click(function() {
-//       $(this).toggleClass('active');
-//       $('.gnav_wrapper').slideToggle(400);
-//   });
-// });
-
-// スライダー
-// $(function() {
-//   $('.slider').slick({
-//     accessibility: true,
-//     autoplay: true,
-//     autoplaySpeed: 5000,
-//     fade: true,
-//     swipe: true,
-//   });
-// });
 
 // モーダルが複数ある場合
 $(function () {

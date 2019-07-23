@@ -14,20 +14,15 @@
 </head>
 <!-- 前回までのあらすじ
 
-筆者は恐るべきscssとjQueryの残党に立ち向かうべく、
-長そうな道のりをざっくり確認し
-まずは両者を想定した静的htmlへと書き直すべく奮闘するのであった…
-
-あとスマホ版で左に影みたいなのが見えるのも気になっているのであった...
+筆者はスムーススクロールとかモーダルとか細かい挙動を調整し始めたのであった...
+できればメインビジュアルにPC/SP共通のスライダーを組み込みたいのであった...
 
 to be continued...
 
 
-・ページローディングも入れてみよう
+・できればページローディングも入れてみよう
 （https://jsfiddle.net/9bnyff9g/）
 （https://epic-spinners.epicmax.co/#/）
-
-・メインビューのスライダーは優先順位だいぶ低め
 
  -->
 <body>
@@ -44,9 +39,9 @@ to be continued...
       <nav class="gnav_wrapper">
         <div class="gnav_pc" v-bind:class='{active:isActive}'>
           <ul class="gnav_ul">
-            <li class="gnav_li"><a href="#">Hello</a></li>
-            <li class="gnav_li"><a href="#">Works</a></li>
-            <li class="gnav_li"><a href="#">Project</a></li>
+            <li class="gnav_li"><a href="#" v-scroll-to="'#contents_about'" v-on:click='isActive=!isActive'>Hello</a></li>
+            <li class="gnav_li"><a href="#" v-scroll-to="'#contents_whatido'" v-on:click='isActive=!isActive'>Works</a></li>
+            <li class="gnav_li"><a href="#" v-scroll-to="'#contents_recent'" v-on:click='isActive=!isActive'>Project</a></li>
             <li class="gnav_li"><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -80,7 +75,7 @@ to be continued...
 
   <div class="contents">
 
-    <div class="contents_about">
+    <div id="contents_about" class="contents_about">
       <h3 class="contents_title">Greetings!</h3>
       <p>山路を登りながら、こう考えた。智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。<br>とかくに人の世は住みにくい。<br>住みにくさが高じると、安い所へ引き越したくなる。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。<br>人の世を作ったものは神でもなければ鬼でもない。やはり向う三軒両隣にちらちらするただの人である。</p>
     </div>
@@ -350,7 +345,7 @@ to be continued...
       --><li><a href="#"><img src="img/icon_footer_twi.svg"></a></li><!--
       --></ul>
     </div>
-    <div class="copyright">Copyright (C) 2017 XXX. All Rights Reserved.</div>
+    <div class="copyright">Copyright (C) 2019 TopLine#solid All Rights Reserved.</div>
   </footer>
 
 </div>
@@ -358,9 +353,8 @@ to be continued...
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
 <script>
-//.use(window["vue-js-modal"].default);
-
   window.onload = function() {
     var demo = new Vue({
       el: '#gnav',
@@ -369,7 +363,19 @@ to be continued...
       }
     });
   };
-
+  VueScrollTo.setDefaults({
+      container: "body",
+      duration: 800,
+      easing: "ease",
+      offset: 0,
+      force: true,
+      cancelable: true,
+      onStart: false,
+      onDone: false,
+      onCancel: false,
+      x: false,
+      y: true
+  })
 </script>
 </body>
 </html>
