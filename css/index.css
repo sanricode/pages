@@ -337,7 +337,7 @@
 /* contents_skills */
 .contents_skills {
   position: relative;
-  background: url("../img/img6.jpg") no-repeat fixed;
+  background: url("../img/img6.jpg") fixed;
   z-index: 0;
   overflow: hidden; }
   .contents_skills:before {
