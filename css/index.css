@@ -338,6 +338,7 @@
 .contents_skills {
   position: relative;
   background: url("../img/img6.jpg") fixed;
+  background-attachment: fixed;
   z-index: 0;
   overflow: hidden; }
   .contents_skills:before {
