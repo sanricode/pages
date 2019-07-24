@@ -370,8 +370,8 @@
     .main_box_img {
     margin: 0 auto;
     background: url("../img/artwork/190411.png") no-repeat center center fixed;
-    background-size: cover;
-    animation: Gradient 30s ease infinite;
+    // background-size: cover;
+    animation: none;
       img {
         display: none;
         // max-width: 90%;
@@ -488,7 +488,7 @@
 .contents_skills {
   position: relative;
   background: url("../img/img6.jpg");
-  background-size:cover;
+  // background-size:cover;
   background-attachment: fixed;
   z-index: 0;
   overflow: hidden;

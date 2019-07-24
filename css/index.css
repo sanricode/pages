@@ -274,8 +274,7 @@
     .main_box .main_box_img {
       margin: 0 auto;
       background: url("../img/artwork/190411.png") no-repeat center center fixed;
-      background-size: cover;
-      animation: Gradient 30s ease infinite; }
+      animation: none; }
       .main_box .main_box_img img {
         display: none; } }
 /* contents */
@@ -338,7 +337,6 @@
 .contents_skills {
   position: relative;
   background: url("../img/img6.jpg");
-  background-size: cover;
   background-attachment: fixed;
   z-index: 0;
   overflow: hidden; }
