@@ -85,11 +85,11 @@
       background: rgba(0, 0, 0, 0.8);
       opacity: 0;
       visibility: hidden;
-      transition: opacity .6s ease, visibility .6s ease;
+      transition: opacity .4s ease, visibility .4s ease;
       &.active {
         opacity: 1;
         visibility: visible;
-        transition: opacity .6s ease, visibility .6s ease;
+        transition: opacity .4s ease, visibility .4s ease;
       }
       ul {
       position: relative;
@@ -175,14 +175,6 @@
       height: 25px;
       margin: 20px auto 0 5%;
       z-index: 20;
-      // &:before {
-      //   content: '';
-      //   position: absolute;
-      //   display: block;
-      //   width: 50px;
-      //   height: 50px;
-      //   background: #fff;
-      // }
       span {
         position: absolute;
         left: 0;
@@ -362,7 +354,7 @@
         color: #111;
         margin: 0 auto 0;
         font-size: 3rem;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-align: center;
       }
       .main_box_info_text,
@@ -376,7 +368,7 @@
     background: url("../img/artwork/190609.jpg") no-repeat center center;
     background-size: cover;
     animation: none;
-    padding: 77% 0;
+    padding: 76.5% 0;
       img {
         display: none;
         // max-width: 90%;
@@ -798,7 +790,7 @@
         text-align: right;
         color: #333;
         font-weight: bold;
-        margin: 15px auto 10px;
+        margin: 10px auto 15px;
         }
       }
       .modal_imagebox {
