@@ -259,23 +259,28 @@
       width: 100% !important; }
     .main_box .main_box_info {
       position: absolute;
-      height: auto;
+      display: flex;
+      align-items: center;
+      height: 100%;
       padding: 0;
-      margin: 48% auto 0;
+      margin: auto;
       z-index: 1; }
       .main_box .main_box_info .main_box_title {
-        color: #fff;
+        color: #111;
         margin: 0 auto 0;
         font-size: 3rem;
+        letter-spacing: 1px;
         text-align: center; }
       .main_box .main_box_info .main_box_info_text,
       .main_box .main_box_info .main_box_info_date {
         display: none; }
     .main_box .main_box_img {
       margin: 0 auto;
+      height: 100%;
       background: url("../img/artwork/190609.jpg") no-repeat center center;
       background-size: cover;
-      animation: none; }
+      animation: none;
+      padding: 77% 0; }
       .main_box .main_box_img img {
         display: none; } }
 /* contents */
