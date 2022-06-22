@@ -1,368 +1,113 @@
-<!doctype html>
-<html class="no-js" lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Sanricode</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
-  <style type="text/css">
-  </style>
+<!DOCTYPE html>
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9, IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="ページのURL">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="ページのアイキャッチ画像のURL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="htmlGallerySample">
+    <title>タイトル</title>
+    <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+    <link href="common/css/index.css" rel="stylesheet">
 </head>
-<body>
 
-<div id="wrap">
+<body class="index isInactive" id="index">
 
-  <div class="main">
+  <div class="loading" id="loading"></div>
 
-    <header>
-      <h1 class="header_title">Web Design Portfolio Site</h1>
+  <div class="wrapper">
+
+    <div class="keyvisual">
+      <div class="scrolldown"><span>Scroll</span></div>
+    </div>
+
+    <header class="header">
+      <h1>htmlGallery</h1>
+      <nav class="nav">
+        <ul>
+          <li><span href="#" class="profile_link isActive _prof" id="profile_link">profile</span></li>
+          <li><a href="#" class="_twi"></a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div id="gnav" class="gnav">
-      <nav class="gnav_wrapper">
-        <div class="gnav_pc" v-bind:class='{active:isActive}'>
-          <ul class="gnav_ul">
-            <li class="gnav_li"><a href="#" v-scroll-to="'#contents_about'" v-on:click='isActive=!isActive'>Hello</a></li>
-            <li class="gnav_li"><a href="#" v-scroll-to="'#contents_whatido'" v-on:click='isActive=!isActive'>Works</a></li>
-            <li class="gnav_li"><a href="#" v-scroll-to="'#contents_recent'" v-on:click='isActive=!isActive'>Project</a></li>
-            <li class="gnav_li"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div id="gnav_sp" class="gnav_sp">
-        <a class="gnav_trigger" v-bind:class='{active:isActive}' v-on:click='isActive=!isActive'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
+    <section class="section">
+      <div class="container flex gallery js-modal">
+        <div class="item"><img src="common/artworks/2022_0205.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0203.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0130.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0129.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0126.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0125.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0118.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0113.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0112.jpg"></div>
+        <div class="item"><img src="common/artworks/2022_0101.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1225.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1218.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1210.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1208.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1206.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1129.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1125.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1101.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1030.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1013.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1010.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_1002.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0906.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0828.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0827.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0821.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0820.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0813.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0812.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0811.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0809.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0804.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0723.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0522.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0426.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0416.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0312.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0309.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0214.jpg"></div>
+        <div class="item"><img src="common/artworks/2021_0206.jpg"></div>
       </div>
-    </div>
+    </section>
 
-    <ul class="main_slider slider">
-      <li>
-        <div class="main_box row">
-          <div class="main_box_info six columns">
-            <h2 class="main_box_title">Top Line #solid</h2>
-            <div class="main_box_info_text">
-              <p>山路を登りながら、こう考えた。智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。とかくに人の世は住みにくい。住みにくさが高じると、安い所へ引き越したくなる。<br>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。人の世を作ったものは神でもなければ鬼でもない。やはり向う三軒両隣にちらちらするただの人である。</p>
-            </div>
-            <div class="main_box_info_date">December. 2018</div>
-          </div>
-          <div class="main_box_img six columns">
-            <a href="#"><img src="img/img1.jpg"></a>
-          </div>
-        </div>
-      </li>
-    </ul>
+    <footer class="footer">
+      <p>2022@ design & development : htmlGallery</p>
+    </footer>
+
   </div>
 
-  <div class="contents">
-
-    <div id="contents_about" class="contents_about">
-      <h3 class="contents_title">Greetings!</h3>
-      <p>世の中に一つでも多く、よいものを増やしたいと思っています。</p>
-    </div>
-
-    <div class="contents_skills">
-      <h3 class="contents_title">Skills</h3>
-      <div class="row">
-        <div class="four columns">
-          <img src="img/icon_skills_design.svg"><br>
-          <h4 class="contents_skills_title">Design</h4>
-          <p>Photoshop, Illustrator, XDを習得し、現在は余白およびフォントの勉強に力を入れています。クライアント様の目的を達成できるよう、コンテンツを引き立てるデザインを心がけています。</p>
-        </div>
-        <div class="four columns">
-          <img src="img/icon_skills_code.svg"><br>
-          <h4 class="contents_skills_title">Cording</h4>
-          <p>html5とCSS3、またSass/SCSSについて問題なく習得しており、個人での小規模サイト開発〜チームでの大規模サイトリニューアルの経験があります。Vue.jsでの小規模SPA構築やWordPressサイト構築のスキルはプライベートプロジェクトで独学しました。</p>
-        </div>
-        <div class="four columns">
-          <img src="img/icon_skills_direction.svg"><br>
-          <h4 class="contents_skills_title">Direction</h4>
-          <p>小規模プロジェクトにおけるスケジュール管理や品質管理などの経験があり、現在はWeb接客などマーケティング面でプロジェクトに参画しています。MOS Excel SpecialistおよびGoogleアナリティクス個人認定資格を取得しました。</p>
-        </div>
+  <div class="profile" id="profile">
+    <div class="profile_base" id="profile_base"></div>
+    <div class="profile_content" id="profile_content">
+      <div class="profile_inner">
+        <div class="profile_close" id="profile_close"><span></span></div>
+        <h2 class="profile_title">ここにProfile</h2>
+        <p>ここにサンプルテキストが入ります。サンプルテキストが入ります。</p>
+        <p>三太郎の日記を永久に打切りにするために、從來公にした第一と第二との本文に、その後のものを集めた第三を加へて、此處に此の書を出版する。三太郎の日記は三十代に於ける自分の前半期の伴侶として、色々の意味に於いて思ひ出の多いものである。併しこの書を通讀する人が行間に於いて看取するを得べきが如く、自分は次第に此の類の告白、若しくは告白めきたる空想及び思索をしてゐるに堪へなくなつて來た。</p>
+        <p>ここにサンプルテキストが入ります。</p>
       </div>
-    </div>
-
-    <div id="contents_whatido" class="contents_whatido">
-      <h3 class="contents_title">Personal Works</h3>
-
-      <ul class="modal_trigger">
-        <li class="modal_btn"><img src="img/img1.jpg"></li>
-        <li class="modal_btn"><img src="img/img2.jpg"></li>
-        <li class="modal_btn"><img src="img/img3.jpg"></li>
-        <li class="modal_btn"><img src="img/img4.jpg"></li>
-        <li class="modal_btn"><img src="img/img1.jpg"></li>
-        <li class="modal_btn"><img src="img/img2.jpg"></li>
-      </ul>
-
-      <div class="modal_area1">
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/img1.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年7月31日</p>
-                <ul>
-                  <li>Photoshop</li>
-                  <li>個人制作</li>
-                  <li>2時間</li>
-                  <li>ここに一言　覚えがあれば</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/img2.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年7月31日</p>
-                <ul>
-                  <li>Photoshop</li>
-                  <li>個人制作</li>
-                  <li>2時間</li>
-                  <li>ここに一言　覚えがあれば</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/img3.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年7月31日</p>
-                <ul>
-                  <li>Photoshop</li>
-                  <li>個人制作</li>
-                  <li>2時間</li>
-                  <li>ここに一言　覚えがあれば</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/img4.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年7月31日</p>
-                <ul>
-                  <li>Photoshop</li>
-                  <li>個人制作</li>
-                  <li>2時間</li>
-                  <li>ここに一言　覚えがあれば</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/img1.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年7月31日</p>
-                <ul>
-                  <li>Photoshop</li>
-                  <li>個人制作</li>
-                  <li>2時間</li>
-                  <li>ここに一言　覚えがあれば</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/img2.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年7月31日</p>
-                <ul>
-                  <li>Photoshop</li>
-                  <li>個人制作</li>
-                  <li>2時間</li>
-                  <li>ここに一言　覚えがあれば</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="contents_recent" class="contents_recent">
-      <h3 class="contents_title">Personal Project</h3>
-
-      <ul class="modal_ui">
-        <li class="modal_btn"><img src="img/artwork/190723.jpg"></li>
-        <li class="modal_btn"><img src="img/artwork/190525.jpg"></li>
-        <li class="modal_btn"><img src="img/artwork/190426.jpg"></li>
-        <li class="modal_btn"><img src="img/artwork/190402.jpg"></li>
-        <li class="modal_btn"><img src="img/artwork/181009.png"></li>
-        <li class="modal_btn"><img src="img/artwork/180731.png"></li>
-      </ul>
-
-      <div class="modal_area2">
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/artwork/190723.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年07月23日</p>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/artwork/190525.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年05月25日</p>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/artwork/190426.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年04月26日</p>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/artwork/190402.jpg">
-              </div>
-              <div class="modal_textbox">
-                <p>2019年04月02日</p>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/artwork/181009.png">
-              </div>
-              <div class="modal_textbox">
-                <p>2018年10月09日</p>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
-        <div class="modal_box">
-          <div class="modal_bg"></div>
-          <div class="modal_inner">
-            <div class="modal_block">
-              <div class="modal_imagebox">
-                <img src="img/artwork/180731.png">
-              </div>
-              <div class="modal_textbox">
-                <p>2018年07月31日</p>
-              </div>
-            </div>
-            <div class="modal_close">×</div>
-          </div>
-        </div>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="footer_nav">
-      <ul><!--
-      --><li><a href="#"><img src="img/icon_footer_fb.svg"></a></li><!--
-      --><li><a href="#"><img src="img/icon_footer_in.svg"></a></li><!--
-      --><li><a href="#"><img src="img/icon_footer_twi.svg"></a></li><!--
-      --></ul>
-    </div>
-    <div class="copyright">Copyright (C) 2019 TopLine#solid All Rights Reserved.</div>
-  </footer>
+  <div class="modal" id="modal">
+    <div class="modal_base" id="modal_base"></div>
+    <img src="" class="modal_image">
+  </div>
 
-</div>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
-<script>
-  window.onload = function() {
-    var demo = new Vue({
-      el: '#gnav',
-      data: {
-        isActive: false,
-      }
-    });
-  };
-  VueScrollTo.setDefaults({
-      container: "body",
-      duration: 800,
-      easing: "ease",
-      offset: 0,
-      force: true,
-      cancelable: true,
-      onStart: false,
-      onDone: false,
-      onCancel: false,
-      x: false,
-      y: true
-  })
-</script>
+  <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
+  <script src="common/js/index.js" defer></script>
+  <script src="common/js/gallery.js" defer></script>
 </body>
+
 </html>
