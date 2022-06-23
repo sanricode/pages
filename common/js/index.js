@@ -21,11 +21,11 @@ UserAgent();
 
 // loading
 // -------------------------------------
-const loading = function() {
-  document.getElementById('loading').classList.add('isInactive');
-  document.getElementById('index').classList.remove('isInactive');
-}
-setTimeout(loading, 3000);
+// const loading = function() {
+//   document.getElementById('loading').classList.add('isInactive');
+//   document.getElementById('index').classList.remove('isInactive');
+// }
+// setTimeout(loading, 3000);
 
 
 // smooth scroll
@@ -52,7 +52,7 @@ for (let i = 0; i < smoothScrollTrigger.length; i++) {
 // modal
 // -------------------------------------
 const modal = document.getElementById('modal');
-const images = document.querySelectorAll('.gallery img');
+const images = document.querySelectorAll('.l-gallery img');
 const modalImage = document.querySelector('.modal_image');
 const modalBase = document.getElementById('modal_base');
 
@@ -77,20 +77,4 @@ modal.addEventListener('click', function() {
     this.classList.remove('isActive');
     modalImage.classList.remove('isActive');
   }
-});
-
-
-
-// profile
-// -------------------------------------
-const profile = document.getElementById('profile');
-const profileLink = document.getElementById('profile_link');
-const profileClose = document.getElementById('profile_close');
-  
-profileLink.addEventListener('click', function() {
-  profile.classList.add('isActive');
-});
-
-profileClose.addEventListener('click', function() {
-  profile.classList.remove('isActive');
 });
