@@ -858,8 +858,10 @@ button {
   font-size: 1.2rem;
   font-weight: 100;
   letter-spacing: 1px;
-  text-align: center;
-  background-color: blue;
+  background-image: url(../images/key3.jpg);
+  background-attachment: fixed;
+  background-position: 0% 20%;
+  background-size: cover;
 }
 
 .footer p {
