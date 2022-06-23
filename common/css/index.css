@@ -13,12 +13,15 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
   color: #343434;
   font-size: clamp(15px, 1.15vw, 32px);
   font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 body.isInactive {
