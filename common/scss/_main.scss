@@ -1,0 +1,121 @@
+
+
+// ----------------------------------------------------
+// main
+// ----------------------------------------------------
+
+
+// .e-loading {
+//   position: fixed;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   height: 100vh;
+//   min-height: -webkit-fill-available;
+//   background-image: url(../images/key3.jpg);
+//   background-position: 0% 20%;
+//   background-size: cover;
+//   z-index: var(--zTop);
+//   animation: slideKeyvisual 3s forwards ease-in-out;
+//   @include media(md) {
+//     height: 100vh;
+//     background-position: 50% 100%;
+//   }
+//   &.isInactive {
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: .8s;
+//     overflow: auto;
+//   }
+// }
+
+//
+
+.e-keyvisual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  @include media(md) {
+    min-height: 100vh;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
+  }
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/key3.jpg);
+    background-position: 0% 20%;
+    background-size: cover;
+    z-index: var(--zUnder);
+    animation: slideKeyvisual 3s forwards ease-in-out;
+    @include media(md) {
+      min-height: 100vh;
+      min-height: 100dvh;
+      min-height: -webkit-fill-available;
+      background-position: 50% 100%;
+    }
+  }
+}
+
+@keyframes slideKeyvisual {
+  0% { 
+    background-image: url(../images/key1.jpg);
+  }
+  40% {
+    background-image: url(../images/key2.jpg);
+  }
+  80% {
+    background-image: url(../images/key3.jpg);
+  }
+}
+
+
+.e-scrolldown {
+  position:absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 30px;
+  height: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 30px;
+    background: #eee;
+    animation: pathmove 1.4s ease-in-out infinite;
+    opacity:0;
+  }
+  span {
+    position: absolute;
+    left: -3rem;
+    right: -3rem;
+    top: -15px;
+    color: #eee;
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+}
+
+@keyframes pathmove {
+  0% {
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30% {
+    height:30px;
+    opacity: 1;
+  }
+  100% {
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
